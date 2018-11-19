@@ -65,7 +65,20 @@ Assert.AreEqual("Move ( b2, Table, b3 )", plan[1]);
 Assert.AreEqual("Move ( b1, Table, b2 )", plan[2]);
 ```
 
-### 机器人
+### Robot
+初始状态：
+
+![image](https://github.com/foamliu/NPlanner/raw/master/images/robot_init.png)
+
+目标状态：
+
+![image](https://github.com/foamliu/NPlanner/raw/master/images/robot_goal.png)
+
+生成计划：
+```csharp
+ChangeColor ( green, red )
+Paint ( sec1, red )
+```
 
 ```csharp
 EntitySet objects = new EntitySet();
