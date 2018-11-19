@@ -1,5 +1,5 @@
 # NPlanner
-NPlanner是C#编写的图规划算法的简单粗暴的实现，支持STRIPS语言。
+NPlanner是C#编写的图规划算法实现，支持STRIPS语言。
 
 ## 用法
 
