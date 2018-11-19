@@ -59,15 +59,6 @@ NPlanner是C#编写的图规划算法的简单粗暴的实现，支持STRIPS语�
 ```
 
 ### 机器人
-初始状态：
-
-![image](https://github.com/foamliu/NPlanner/raw/master/images/blocks_init.png)
-
-目标状态：
-
-![image](https://github.com/foamliu/NPlanner/raw/master/images/blocks_goal.png)
-
-代码示例：
 
 ```csharp
             EntitySet objects = new EntitySet();
@@ -112,13 +103,6 @@ NPlanner是C#编写的图规划算法的简单粗暴的实现，支持STRIPS语�
 ```
 
 ### 机器人
-初始状态：
-
-![image](https://github.com/foamliu/NPlanner/raw/master/images/blocks_init.png)
-
-目标状态：
-
-![image](https://github.com/foamliu/NPlanner/raw/master/images/blocks_goal.png)
 
 代码示例：
 
@@ -162,17 +146,10 @@ NPlanner是C#编写的图规划算法的简单粗暴的实现，支持STRIPS语�
 
             GraphPlan graph = new GraphPlan(objects, init, goal, opSet);
             bool res = graph.CreateGraph();
-            //Assert.IsTrue(res);
 
             res = graph.SearchGoal();
-            //Assert.IsTrue(res);
 
             List<string> plan = graph.GetPlan();
-
-            //foreach (string step in plan)
-            //{
-            //    System.Console.WriteLine(step);
-            //}
 
             Assert.AreEqual(5, plan.Count);            
 
