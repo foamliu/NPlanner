@@ -12,6 +12,13 @@ NPlanner是C#编写的图规划算法实现，支持STRIPS语言。
 
 ![image](https://github.com/foamliu/NPlanner/raw/master/images/blocks_goal.png)
 
+生成计划：
+```csharp
+MoveToTable ( b1, b2 )
+Move ( b2, Table, b3 )
+Move ( b1, Table, b2 )
+```
+
 代码示例：
 
 ```csharp
@@ -102,7 +109,24 @@ Assert.AreEqual("ChangeColor ( green, red )", plan[0]);
 Assert.AreEqual("Paint ( sec1, red )", plan[1]);
 ```
 
-### 机器人
+### Rocket
+
+初始状态：
+
+![image](https://github.com/foamliu/NPlanner/raw/master/images/rocket_init.png)
+
+目标状态：
+
+![image](https://github.com/foamliu/NPlanner/raw/master/images/rocket_goal.png)
+
+生成计划：
+```csharp
+load ( Rx, Lx, Ax )
+load ( Rx, Lx, Bx )
+move ( Rx, Lx, Px )
+unload ( Rx, Px, Ax )
+unload ( Rx, Px, Bx )
+```
 
 代码示例：
 
